@@ -4,6 +4,7 @@ credentials-file: /root/.cloudflared/<tunnel ID>.json
 ingress:
  - hostname: test.example.com
    service: http://127.0.0.1:6900
+   protocol: http2
  - hostname: ssh.example.com
    service: ssh://localhost:22
  - service: http_status:404
